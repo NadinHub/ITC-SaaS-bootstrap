@@ -6,147 +6,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-
     <title>SaaS</title>
 </head>
 
 <body>
     <div class="container-fluid bg-light p-0 m-0">
         <div class="row no-gutters">
-            <!-- Whole page-->
-            <div class="col-sm-2 d-none d-sm-block bg-white">
-                <div class="sidebar__header p-3">
-                    <img src="logo.png" alt="" class="center">
-                </div>
-                <div class="sidebar-profile m-0 p-1 d-flex">
-                    <img class="rounded-circle p-2" src="image2.png" alt="photo">
-                    <div class="sidebar-profile__text p-1">
-                        <span>Sierra Ferguson </span>
-                        <span class="font-weight-lighter">ferguson@gmail.com</span>
+
+            <!-- Sidebar -->
+            <div class="col-sm-3 d-none d-sm-block">
+                <div class="bg-white shadow border-right">
+                    <div class="sidebar__header p-3">
+                        <img src="/img/logo.png" alt="" class="center">
                     </div>
-                </div>
-                <div class="sidebar__item p-3">
-                    <i class="fas fa-th-large"></i>
-                    <span>Dashboard</span>
-                </div>
-                <div class="sidebar__item p-3">
-                    <i class="fas fa-th-large"></i>
-                    <span>Tasks</span>
-                </div>
-                <div class="sidebar__item p-3">
-                    <i class="fas fa-th-large"></i>
-                    <span>Email</span>
+                    <div class="sidebar-profile m-0 p-1 d-flex">
+                        <img class="rounded-circle p-2" src="img/image2.png" alt="photo">
+                        <div class="sidebar-profile__text p-1">
+                            <span>Sierra Ferguson </span>
+                            <span class="font-weight-lighter">ferguson@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="sidebar__item p-3">
+                        <i class="fas fa-th-large"></i>
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="sidebar__item p-3">
+                        <i class="fas fa-th-large"></i>
+                        <span>Tasks</span>
+                    </div>
+                    <div class="sidebar__item p-3">
+                        <i class="fas fa-th-large"></i>
+                        <span>Email</span>
+                    </div>
                 </div>
             </div>
             <!-- END Sidebar-->
 
-            <div class="col-12 col-sm-8">
-                <div class="row bg-white m-0">
+            <div class="col-12 col-sm-9">
                     <!-- Search bar------------------->
-                    <div class="d-flex w-100 justify-content-between align-items-center" style="border: 1px solid red;">
+                    <div class="row">
+                    <div class="d-flex w-100 justify-content-between align-items-center bg-white px-3" style="border: 1px solid red;">
                         <i class="fas fa-search p-3"></i>
                         <span class="p-3">
                             Global search
                         </span>
-                        <div class="ml-auto">
-                            <!-- Class ml-auto does not work!!! ???-->
-                            <i class="far fa-bell p-3"></i>
+                        <div class="ml-auto p-3 point-on-bell-parent">
+                            <img src="/img/bell.svg" alt="">
+                            <span class="bage badge-pill badge-danger position-absolute"> </span>
+                            <!-- <span class="sr-only">unread messages</span> -->
                         </div>
                     </div>
+                    </div>
                     <!-- END Search bar -------------->
-                </div>
 
-                <div class="container p-0">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-sm-8">
-                            <div class="mobile-wrapper1">
-                                <div class="main-left bg-white">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-8 p-0">
+                                <!-- <div class="mobile-wrapper1">
+                                    <div class="main-left bg-white"> -->
 
-                                    <div class="border-bottom">
-                                        <div class="d-flex justify-content-between align-items-center p-3"
-                                            style="border: 1px solid red;">
-                                            <span class="pl-2">
-                                                8 task completed out of 10
-                                            </span>
-                                            <small class="pr-2">Show: <a href="">This week</a></small>
+                                        <!--Block main 1 -------------->
+                                        <div class="block-main-big-screen bg-white">
+                                        <div class="border-bottom">
+                                            <div class="d-flex justify-content-between align-items-center p-3"
+                                                style="border: 1px solid red;">
+                                                <span class="pl-2">
+                                                    8 task completed out of 10
+                                                </span>
+                                                <small class="pr-2">Show: <a href="">This week <img
+                                                            src="img/Polygon.svg" alt=""></a></small>
+                                            </div>
+
+                                            <div class="progress mx-4" style="height: 4px; width: 88%;">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="h5 px-4 p-3">23 December, Sunday
+                                            </div>
+                                            <div class="callender hiddenMobile">
+                                                Sun
+                                            </div>
                                         </div>
 
-                                        <div class="progress mx-4" style="height: 4px; width: 88%;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div class="h5 px-4 p-3">23 December, Sunday
-                                        </div>
-                                        <div class="callender hiddenMobile">
-                                            Sun
-                                        </div>
-                                    </div>
-                                    <!---------- Card 1---------------->
-                                    <div class="card shadow-sm m-4">
-                                        <div class="px-3 pt-3 d-flex justify-content-between" style="height: 2.9rem">
-                                            <div class="h5 flex-fill text-truncate">
-                                                Send benefit review by Sunday
+                                        <!---------- Card 1---------------->
+                                        <div class="card shadow-sm m-4">
+                                            <div class="px-3 pt-3 d-flex justify-content-between"
+                                                style="height: 2.9rem">
+                                                <div class="h5 flex-fill text-truncate">
+                                                    Send benefit review by Sunday
+                                                </div>
+                                                <small class="p-1 text-muted">Reminder</small>
                                             </div>
-                                            <small class="p-1 text-muted">Reminder</small>
+                                            <div class="pl-3">
+                                                <span class="text-muted"> Due data:
+                                                </span>
+                                                <span>December 23, 2018
+                                                </span>
+                                            </div>
+                                            <div class="p-3 d-flex justify-content-between align-items-center">
+                                                <img src="/img/image2.png" alt="photo" class="rounded-circle img-small">
+                                                <span class="pl-2">George Fields</span>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-success btn-green ml-auto">Completed</button>
+                                            </div>
                                         </div>
-                                        <div class="pl-3">
-                                            <span class="text-muted"> Due data:
-                                            </span>
-                                            <span>December 23, 2018
-                                            </span>
-                                        </div>
-                                        <div class="p-3 d-flex justify-content-between align-items-center">
-                                            <img src="/img/image2.png" alt="photo" class="rounded-circle img-small">
-                                            <span class="pl-2">George Fields</span>
-                                            <button type="button"
-                                                class="btn btn-sm btn-success ml-auto">Completed</button>
-                                        </div>
-<!-- END Card 1 --------------->
-                                    </div>
-                                    <div class="card block-1">
-                                        Invite to office meet-up
-                                    </div>
-                                    <div class="card block-1">
-                                        Office meet-up
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        <!-- END Card 1 --------------->
+                                        <!-- Card 2 ------------------->
+                                        <div class="card shadow-sm m-4">
+                                            <div class="px-3 pt-3 d-flex justify-content-between"
+                                                style="height: 2.9rem">
+                                                <div class="h5 flex-fill text-truncate">
+                                                    Invite to office meet-up
+                                                </div>
+                                                <small class="p-1 text-muted">Call</small>
+                                            </div>
+                                            <div class="pl-3">
+                                                <span class="text-muted"> Due data:
+                                                </span>
+                                                <span>December 23, 2018
+                                                </span>
+                                            </div>
+                                            <div class="p-3 d-flex justify-content-between align-items-center">
+                                                <img src="/img/image2.png" alt="photo" class="rounded-circle img-small">
+                                                <span class="pl-2">Rebecca Moore</span>
+                                                <div class="ml-auto pr-n2 point-on-bell-parent">
+                                                    <img src="/img/bin.svg" alt="">
+                                                </div>
 
-                        <div class="col-12 col-sm-4 p-3">
-                            <div class="mobile-wrapper2 bg-white">
-                                <div class="main-right">
-                                    <div class="deals">
-                                        <div class="deals__header">
-                                            <div class="deals__header__text">
-                                                Deals
-                                            </div>
-                                            <div class="deals__header__period">
-                                                <p>Show: Monthly</p>
-                                                <i class="fas fa-caret-down"></i>
-                                            </div>
-                                            <div class="deals__block">
-                                                <img src="" alt="">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-danger btn-red ml-auto">Ended</button>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- END Card 2 --------------->
+                                        <!-- Card 3 ------------------->
+                                        <div class="card shadow-sm m-4">
+                                            <div class="px-3 pt-3 d-flex justify-content-between"
+                                                style="height: 2.9rem">
+                                                <div class="h5 flex-fill text-truncate">
+                                                    Office meet-up
+                                                </div>
+                                                <small class="p-1 text-muted">Event</small>
+                                            </div>
+                                            <div class="pl-3">
+                                                <span class="text-muted"> Due data:
+                                                </span>
+                                                <span>December 23, 2018
+                                                </span>
+                                            </div>
+                                            <div class="p-3 d-flex justify-content-between align-items-center">
+                                                <img src="/img/image2.png" alt="photo" class="rounded-circle img-small">
+                                                <span class="pl-2">Lindsey Stroud</span>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-success btn-green ml-auto">Completed</button>
+                                            </div>
+                                        </div>
+                                        <!-- END Card 3 --------------->
+                                        </div>
+                                        <!-- Deals - Graphic-------------------->
+                                        <div class="card shadow deals-hidden">
+                                            <div class="d-flex justify-content-between align-items-center p-3">
+                                                <span class="pl-2"></span>
+                                                <small class="pr-2">Show: <a href="">Monthly <img src="img/Polygon.svg"
+                                                            alt=""></a></small>
+                                            </div>
 
-                                    <div class="task">
-                                        <div class="task__header">
-                                            <div class="task__header__text">
-                                                Tasks
-                                            </div>
-                                            <div class="task__block">
-                                                <img src="" alt="">
+                                            <div class="border-top position-relative">
+                                                <div class="p-4 px-5">
+                                                    <small class="circle-blue position-absolute px-1">Closed
+                                                        deals</small>
+                                                </div>
+
+                                                <div class="p-2 d-flex align-items-center">
+                                                    <small class="px-3 text-secondary">200</small>
+                                                    <div class="w-75 overflow-hidden"><img src="img/Line.svg"
+                                                            alt="line">
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 d-flex align-items-center">
+                                                    <small class="px-3 text-secondary">150</small>
+                                                    <div class="w-75 overflow-hidden"><img src="img/Line.svg"
+                                                            alt="line">
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 d-flex align-items-center">
+                                                    <small class="px-3 text-secondary">100</small>
+                                                    <div class="w-75 overflow-hidden"><img src="img/Line.svg"
+                                                            alt="line">
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 d-flex align-items-center">
+                                                    <small class="px-3 text-secondary">50</small>
+                                                    <div class="w-75 overflow-hidden"><img src="img/Line.svg"
+                                                            alt="line">
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 d-flex align-items-center">
+                                                    <small class="px-3 text-secondary">0</small>
+                                                    <div class="w-75 overflow-hidden"><img src="img/Line.svg" alt="line"
+                                                            class="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="graphic overflow-hidden w-75">
+                                                    <img src="img/graphic_deals.png" alt="graphic"
+                                                        class="graphic-img overflow-hidden">
+                                                    <div class="number">
+                                                        <small
+                                                            class="badge badge-secondary badge-pill p-2 px-3">146</small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex px-4 justify-content-between pb-3">
+                                                    <div class="px-3 small">1 Dec</div>
+                                                    <div class="px-3 small">8 Dec</div>
+                                                    <div class="px-3 small">16 Dec</div>
+                                                    <div class="px-3 small">31 Dec</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <!-- END Deals - Graphic-------------------->
+
+                                        <div class="card shadow deals-hidden">
+                                            <div class="d-flex justify-content-between align-items-center p-3">
+                                                <span class="pl-2"></span>
+                                                <small class="pr-2">Show: <a href="">Monthly <img src="img/Polygon.svg"
+                                                            alt=""></a></small>
+                                            </div>
+
+                                            <div class="d-flex align-items-center p-3" style="border: 1px solid red;">
+                                                <div class=""><img src="img/Circle.svg" alt="" class="">
+                                                </div>
+                                                <div class="pl-5">
+                                                    <div class="small circle-yellow p-2">Active
+                                                    </div>
+                                                    <div class="small circle-green p-2">Completed
+                                                    </div>
+                                                    <div class="small circle-red p-2">Ended
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    <!-- </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -154,7 +260,8 @@
                 </div>
             </div>
         </div>
-        <!-- </div> -->
+    </div>
+    <!-- </div> -->
     </div>
 
     <script src="https://kit.fontawesome.com/42bc4d0f17.js" crossorigin="anonymous"></script>
