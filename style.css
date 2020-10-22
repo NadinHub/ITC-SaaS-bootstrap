@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+}
+ .btn {
+     height: 2rem;
+     width: 6rem;
+     background: #2ED47A;
+     border: none;
+ }
+
+ .img-small {
+     width: 24px;
+ }
+.main-left {
+    box-shadow: gray 0 0 5px;
+    background: white;
+}
+
+@media (min-width: 320px) {
+
+    .hiddenMobile {
+        display: none;
+        border: 1px solid red;
+    }
+
+    .task1 {
+        padding: 1rem;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .mobile-wrapper1 {
+        border: none;
+    }
+
+    .main-left {
+        background: white;
+        border: 0;
+        box-shadow: none;
+    }
+
+    /* .block-1 {
+        box-shadow: gray 0 0 5px;
+        background: white;
+        padding: 2rem;
+        margin: 1rem;
+    } */
+}
+
+.wrapper {
+    font-size: 20px;
+    background-color: rgb(238, 238, 238);
+
+}
+
+.header {
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    /* padding: 10px; */
+    background-color: white;
+
+}
+
+/* .header__left {
+    width: 150px;
+    box-shadow: 0 0 10px grey;
+    margin-left: -10px;
+} */
+.header__right {
+    /* display: flex;
+align-content: space-between; */
+}
+
+.fas.fa-search {
+    /* display: inline-block; */
+}
+
+.search {
+    height: 59px;
+
+}
+
+.header__right__search {}
+
+.far.fa-bell {}
+
+.container {}
+
+/* .main-colomn {
+    padding: 2rem;
+} */
+.sidebar__header {
+    height: 60px;
+    /* width: 100%; */
+    border-bottom: 1px solid lightgray;
+}
+
+.sidebar {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* width: 256px; */
+    background: white;
+}
+
+/* .sidebar-profile {
+    width: 256px;
+} */
+.sidebar-profile__foto {
+    border-radius: 50%;
+    width: 15px;
+    background-color: white;
+}
+
+.sidebar-profile__foto img {
+    /* border-radius: 50%; */
+    /* padding: 10px; */
+}
+
+.sidebar-profile__text {}
+
+
+
+.block-1 {
+    box-shadow: gray 0 0 5px;
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.task-complited {
+    /* padding: 10px; */
+}
+
+.line {
+    border-bottom: 4px solid rgb(107, 144, 107);
+    width: 90%;
+    padding: 5px;
+
+}
+
+.main-right {}
+
+.deals {
+    box-shadow: gray 0 0 5px;
+    background: white;
+
+}
+
+.deals__header {
+    box-shadow: gray 0 0 5px;
+}
+
+.deals__header__text {}
+
+.deals__header__period {}
+
+.fas.fa-caret-down {}
+
+.deals__block {
+    border: 1px solid black;
+}
+
+.task {
+    box-shadow: gray 0 0 5px;
+    background: white;
+}
+
+.task__header {}
+
+.task__header__text {}
+
+.task__block {
+    border: 1px solid black;
+}
+
+.menut-left__header {}
+
+.container-rigth {}
